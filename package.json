@@ -1,0 +1,23 @@
+{
+  "name": "learn_git",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aymentrabelsi1/checkpointsgit.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aymentrabelsi1/checkpointsgit/issues"
+  },
+  "homepage": "https://github.com/aymentrabelsi1/checkpointsgit#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "sqlite3": "^5.1.7"
+  }
+}

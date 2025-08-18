@@ -1,37 +1,163 @@
+/* Reset some default */
 * {
-  padding: 0;
-  margin: 0 auto;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-body{background-color: rgb(185, 185, 185);
-  display: flex;
-  min-height: 100vh;
-  justify-content: space-between;
-  flex-direction: column;
+body {
+font-family: 'Inter', 'Roboto', sans-serif;
+
+  line-height: 1.6;
+  background: #f4f7f8;
+  color: #333;
+}
+
+nav{background-color: green;}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
 
 }
-body h1{background-color: green;}
-
-body h2{background-color: goldenrod;}
+#img-con{width: 100px;height: 100px;overflow: hidden;border-radius: 800px;}
 
 
-
-
-#aymen{
+#img-con  img {
   width: 100%;
-  background-color: red;display: flex;justify-content: space-between;flex-direction: row;}
+  height: 100%;
+  object-fit: cover;
+}
+header {
+  background: #222;
+  padding: 15px 0;
+}
 
-  #youness{
-    background-color: blue;
-    width:100%;display: flex;flex-direction: row;
-    justify-content: space-around;
-  }
+.logo {
+  color: #fff;
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 2px;
+}
 
-  #youness li {color: white;}
-  #anas{
-    background-color: white; display: flex;
-    width: 100%;
-top: 230px;
-    
-  }  
+nav .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav .nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+nav .nav-links li a:hover {
+  color: #ff6f61;
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section {
+  padding: 50px 0;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #222;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgb(0 0 0 / 0.1);
+  transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card h3 {
+  margin-bottom: 10px;
+  color: #ff6f61;
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #333;
+  text-decoration: underline;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form label {
+  font-weight: 600;
+  color: #555;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  background: #ff6f61;
+  border: none;
+  padding: 12px;
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background: #e55b50;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background: #222;
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+#mylist{background-color: red;
+  position: absolute;
+  display: block;
+  list-style: none;}
+
+  #mylist li{border: 1px solid yellow;background-color:blue;}
+
+#father{background-color: black;}
+
+#father:hover #mylist{display: block;height: 80px;}
